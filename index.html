@@ -15,8 +15,15 @@
 
 <body>
 
+    <div class="video-loading">
+        <video id="loadingVideo" autoplay muted>
+            <source src="assets/img/FULL.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+        </video>
+    </div>
+
     <!--Container Geral-->
-    <div class="container">
+    <div class="container hidden">
 
         <!--Header-->
         <header class="header">
@@ -26,7 +33,7 @@
 
             <div class="menu">
                 <label class="hamburger">
-                    <input type="checkbox">
+                    <input type="checkbox" id="menuToggle">
                     <svg viewBox="0 0 32 32">
                         <path class="line line-top-bottom"
                             d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
@@ -35,11 +42,27 @@
                     </svg>
                 </label>
             </div>
+
+            <div class="menu-aberto">
+                <nav class="nav-menu">
+                    <a href="#">INÍCIO</a>
+                    <a href="#">SOBRE</a>
+                    <a href="#">SERVIÇOS</a>
+                    <a href="#">PORTFOLIO</a>
+                    <a href="#">CONTATO</a>
+                </nav>
+            </div>
         </header>
         <!--Fim Header-->
 
         <!--Início-->
-        <main id="#inicio" class="inicio">
+        <main id="inicio" class="inicio">
+            <div class="video-bg-home">
+                <video id="bgVideo" autoplay muted loop>
+                    <source src="assets/img/3d-animation.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+            </div>
             <div class="container-inicio">
                 <div class="conteudo-inicio">
                     <div class="titulo-inicio">
@@ -65,8 +88,17 @@
         </main>
         <!--Fim Início-->
 
-
+        <!--Sobre-->
+        <section id="sobre" class="sobre">
+            
+        </section>
+        <!--Fim Sobre-->
+        
     </div>
+
+    <!--JavaScript-->
+    <script src="assets/js/loading.js"></script>
+    <script src="assets/js/menu.js"></script>
 
 </body>
 

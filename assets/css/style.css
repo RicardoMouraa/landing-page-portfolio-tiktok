@@ -2,7 +2,6 @@
 @import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
 @import url('clash-grotesk.css');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +9,9 @@
 }
 
 :root {
-    /* Fonte grande*/
     --font-grande: 'TT Hoves Pro Trial', sans-serif;
-
-    /*Fonte pequena*/
     --font-pequena: 'ClashGrotesk-Light', sans-serif;
-
-    /*Paleta de cores*/
-    --color-black: #111111;
+    --color-black: #000;
     --color-gray1: #3d4143;
     --color-gray2: #9c9d9d;
     --color-white: #f6f6f6;
@@ -34,6 +28,59 @@ body {
     font-family: var(--font-pequena);
 }
 
+/* Video de Loading */
+.video-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black);
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.video-loading video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .video-loading video {
+        object-fit: contain;
+    }
+}
+
+.video-bg-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #010001;
+}
+
+.video-bg-home video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Estilos adicionais */
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
 .container {
     width: 100%;
     max-width: 1400px;
@@ -42,17 +89,30 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    /* Inicialmente oculto */
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
 }
 
 /*************** HEADER *****/
 .header {
+    user-select: none;
     position: absolute;
     top: 2rem;
     width: 100%;
-    padding: 0rem 1rem;
+    padding: 0rem 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 99;
 }
 
 /* Logo */
@@ -66,10 +126,11 @@ body {
 
 /* Menu */
 .menu {
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
+    z-index: 100; /* Certifica-se de que o ícone do menu está acima do menu navegação */
 }
 
 .hamburger {
@@ -107,6 +168,60 @@ body {
     stroke-dashoffset: -32.42;
 }
 
+/* Menu Navegação */
+.menu-aberto {
+    background-color: var(--color-black);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: 98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.menu-aberto.active {
+    height: 100vh;
+    opacity: 1;
+}
+
+.nav-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nav-menu a {
+    user-select: none;
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: var(--font-pequena);
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.menu-aberto.active .nav-menu a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-menu a:hover {
+    color: var(--color-destaque2);
+    transition: all 0.3s ease;
+}
+
 /*************** INICIO *****/
 .inicio {
     width: 100%;
@@ -115,6 +230,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0rem 1rem;
+    z-index: 1;
+    user-select: none;
 }
 
 .container-inicio {
@@ -139,12 +256,19 @@ body {
 
 .titulo-inicio {
     font-size: clamp(1rem, 2.5vw + .8rem, 3rem);
+    font-family: var(--font-grande);
+    font-weight: normal;
+}
+
+.destaque-inicio {
+    font-weight: lighter;
 }
 
 .paragrafo-inicio p {
     font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
     max-width: 900px;
     color: var(--color-gray2);
+    font-family: var(--font-pequena);
 }
 
 /* Botão Inicio */
@@ -214,14 +338,14 @@ body {
     position: absolute;
     bottom: 2rem;
     width: 100%;
-    padding: 0rem 1rem;
+    padding: 0rem 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .complemento-inicio .text {
-    width: 150px;
+    width: 200px;
 }
 
 .complemento-inicio .qr-code {
