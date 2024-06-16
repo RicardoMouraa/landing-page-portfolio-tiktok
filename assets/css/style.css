@@ -772,3 +772,57 @@ body.loading {
     color: var(--color-gray1);
     margin-bottom: -7px;
 }
+
+
+/*************** FREE YOUR MIND *****/
+.free-your-mind {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    font-family: var(--font-grande);
+}
+
+.container-free-your-mind {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+}
+
+.line-container.center {
+    justify-content: center;
+}
+
+.line-container.right {
+    justify-content: flex-end;
+}
+
+.container-free-your-mind span {
+    color: var(--color-white);
+    font-size: 15vw;
+}
+
+.center span {
+    text-align: center;
+}
+
+.right span {
+    text-align: right;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--color-gray2);
+    margin: 0 4rem;
+}
