@@ -52,6 +52,14 @@ body {
     overflow-x: hidden;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 body.loading {
     overflow: hidden;
 }
@@ -68,7 +76,7 @@ body.loading {
     justify-content: center;
     background-color: var(--color-black);
     opacity: 1;
-    transition: opacity 1s ease-in-out;
+    z-index: -1;
 }
 
 /* Animação de fade-out com zoom */
@@ -509,6 +517,7 @@ body.loading {
     color: var(--color-gray2);
     font-weight: 500;
     line-height: 1.4;
+    letter-spacing: 1.5px;
 }
 
 .redes-sociais {
@@ -680,10 +689,10 @@ body.loading {
 
 .headline-servicos {
     width: 100%;
-    height: 10rem;
+    height: 40vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .titulo-servicos {
@@ -696,22 +705,18 @@ body.loading {
 
 .titulo-servicos h1 {
     color: var(--color-black);
-    font-size: 6rem;
+    width: 50%;
+    font-size: 8vw;
+    font-weight: lighter;
     font-family: var(--font-grande);
 }
 
-
 .descricao-servicos {
-    height: 100%;
     width: 50%;
-    display: flex;
-    align-items: center;
+    font-size: 2rem;
     text-align: right;
-}
-
-.descricao-servicos p {
-    font-size: 1.6rem;
     line-height: 1.4;
+    letter-spacing: 1.5px;
 }
 
 .servicos-cards {
@@ -776,6 +781,7 @@ body.loading {
 
 /*************** FREE YOUR MIND *****/
 .free-your-mind {
+    background-color: var(--color-white);
     width: 100vw;
     height: 100%;
     display: flex;
@@ -808,7 +814,7 @@ body.loading {
 }
 
 .container-free-your-mind span {
-    color: var(--color-white);
+    color: var(--color-black);
     font-size: 15vw;
 }
 
@@ -825,4 +831,168 @@ body.loading {
     height: 1px;
     background-color: var(--color-gray2);
     margin: 0 4rem;
+}
+
+
+/*************** PORTFOLIO *****/
+.portfolio {
+    width: 100%;
+    height: 100%;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+.container-portfolio {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headline-portfolio {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline-portfolio .titulo {
+    width: 50%;
+    font-size: 8vw;
+    font-weight: lighter;
+    font-family: var(--font-grande);
+}
+
+.headline-portfolio .descricao {
+    width: 50%;
+    font-size: 2rem;
+    text-align: right;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+}
+
+.container-case {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.case1, .case2, .case3, .case4 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.imagens-case {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.slide img:first-child {
+    display: block;
+    opacity: 1;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: var(--color-white);
+    font-size: 2rem;
+    user-select: none;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.textos-case {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-textos-case {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo-textos-case h1 {
+    color: var(--color-white);
+    font-size: 6vw;
+    letter-spacing: 3px;
+}
+
+.conteudo-textos-case p {
+    color: var(--color-gray2);
+    font-size: 1.5rem;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    padding-bottom: 1.5rem;
+}
+
+.conteudo-textos-case span {
+    width: 180px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: var(--color-white);
+    border-radius: 50px;
+    color: var(--color-black);
+    font-weight: bold;
+    letter-spacing: 1.2px;
 }
