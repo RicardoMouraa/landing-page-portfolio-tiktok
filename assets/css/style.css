@@ -605,6 +605,9 @@ body.loading {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-headline-skills h2 {
@@ -617,6 +620,7 @@ body.loading {
     color: var(--color-gray2);
     font-weight: 500;
     line-height: 1.4;
+    width: 900px;
 }
 
 .conteudo-skills {
@@ -1005,7 +1009,7 @@ body.loading {
 .marcas {
     background-color: var(--color-white);
     width: 100vw;
-    padding: 7rem 1rem;
+    padding: 5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1021,9 +1025,12 @@ body.loading {
 
 .headline-marcas {
     width: 100%;
-    text-align: center;
     max-width: 1400px;
     margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-black);
 }
 
@@ -1037,4 +1044,40 @@ body.loading {
     color: var(--color-gray1);
     font-weight: 500;
     line-height: 1.4;
+    width: 900px;
+}
+
+.slide-marcas {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: slide 20s linear infinite;
+}
+
+.slides {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slide-logo {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.slide-logo img {
+    max-width: 180px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
