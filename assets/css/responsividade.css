@@ -1,0 +1,200 @@
+/* Responsividade para iPad (tablet) */
+@media (max-width: 1024px) {
+
+    /************************** SOBRE ***/
+    .sobre {
+        height: auto;
+    }
+
+    .container-sobre {
+        height: auto;
+    }
+    
+    .headline-sobre {
+        height: auto;
+        position: relative;
+    }
+
+    .conteudo-sobre {
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 3rem;
+    }
+
+    .left-sobre {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-sobre {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-sobre {
+        justify-content: center;
+    }
+
+    .complemento-sobre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .complemento-sobre img {
+        position: unset;
+        width: 100%;
+    }
+
+    /************************** SERVIÇOS ***/
+
+    .headline-servicos {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .titulo-servicos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .titulo-servicos h1 {
+        font-size: 6rem;
+    }
+
+    .descricao-servicos {
+        width: 100%;
+        text-align: right;
+        font-size: 1.4rem;
+    }
+
+    /************************** PORTFOLIO ***/
+
+    .container-portfolio {
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .headline-portfolio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .headline-portfolio .titulo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .headline-portfolio .titulo {
+        font-size: 6rem;
+    }
+
+    .headline-portfolio .descricao {
+        width: 100%;
+        text-align: right;
+        font-size: 1.4rem;
+    }
+
+    .container-case {
+        gap: 2rem;
+    }
+
+    .case1,
+    .case3 {
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        justify-content: center;
+    }
+
+    .case2, 
+    .case4 {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        height: auto;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .imagens-case {
+        width: 100%;
+        height: 60vh
+    }
+
+    .textos-case {
+        width: 100%;
+        height: 35vh;
+    }
+
+    /************************** CONTATO ***/
+    .contato {
+        padding: 0rem 1rem 2rem 1rem;
+        height: auto;
+    }
+
+    .container-contato {
+        width: 100%;
+        height: auto;
+    }
+
+    .headline-contato {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .titulo-contato {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .titulo-contato h1 {
+        font-size: 6rem;
+    }
+
+    .descricao-contato {
+        width: 100%;
+        text-align: right;
+        font-size: 1.4rem;
+    }
+
+    .descricao-contato a {
+        text-decoration: none;
+        color: var(--color-black);
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        line-height: 1.4;
+        font-weight: bold;
+    }
+
+
+    .conteudo-contato {
+        padding-top: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .logo-contato {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-contato img{
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .formulario-contato {
+        width: 100%;
+    }
+
+}
+
+/* Responsividade para iPhone (celular) */
+@media (max-width: 768px) {
+}

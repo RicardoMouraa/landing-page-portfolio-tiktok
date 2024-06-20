@@ -109,6 +109,62 @@ body.loading {
     }
 }
 
+/*Botões fixos*/
+.fixed-button {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+#backToTop {
+    bottom: 20px;
+    left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+#whatsappButton {
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); 
+    animation: pulse 2s infinite;
+}
+
+#whatsappButton i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.fixed-button i {
+    font-size: 24px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+}
+
+/*Video da home*/
 .video-bg-home {
     position: absolute;
     top: 0;
@@ -117,6 +173,7 @@ body.loading {
     height: 100%;
     z-index: -1;
     background-color: #010001;
+    opacity: 0.8;
 }
 
 .video-bg-home video {
@@ -502,7 +559,6 @@ body.no-scroll {
     width: 100%;
     height: 70%;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .left-sobre {
@@ -566,7 +622,6 @@ body.no-scroll {
 
 .complemento-sobre {
     width: auto;
-    z-index: 1000;
     z-index: 0;
 }
 
@@ -631,7 +686,7 @@ body.no-scroll {
     color: var(--color-gray2);
     font-weight: 500;
     line-height: 1.4;
-    width: 900px;
+    max-width: 900px;
 }
 
 .conteudo-skills {
@@ -1025,7 +1080,7 @@ body.no-scroll {
 }
 
 .container-marcas {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1053,7 +1108,7 @@ body.no-scroll {
     color: var(--color-gray1);
     font-weight: 500;
     line-height: 1.4;
-    width: 900px;
+    max-width: 900px;
 }
 
 .carousel {
@@ -1085,7 +1140,7 @@ body.no-scroll {
     width: 100vw;
     height: auto;
     display: flex;
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 3rem 0rem;
     align-items: center;
     justify-content: center;
     background-color: var(--color-white);
@@ -1199,12 +1254,12 @@ body.no-scroll {
     padding: 1.5rem 1rem;
 }
 
-.form button {
+.btn {
     background-color: var(--color-destaque1);
     color: var(--color-black);
     font-weight: bold;
-    width: 150px;
-    height: 120px;
+    width: 190px;
+    padding: 1rem 0rem;
     border: 2px solid rgba(128, 128, 128, 0.5);
     outline: none;
     border-radius: 30px;
