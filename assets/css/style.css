@@ -1118,15 +1118,14 @@ body.no-scroll {
 }
 
 .carousel-container {
-    white-space: nowrap;
     display: flex;
-    gap: 1rem;
+    white-space: nowrap;
+    transition: transform 0.1s linear;
 }
 
 .carousel-item {
     display: inline-block;
-    min-width: 280px; 
-    box-sizing: border-box;
+    min-width: 200px;
     text-align: center;
 }
 

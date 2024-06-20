@@ -11,6 +11,9 @@
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body data-scroll-container>
@@ -24,12 +27,12 @@
     </div>
 
     <!--Botão voltar ao topo-->
-    <div id="backToTop" class="fixed-button">
+    <div id="backToTop" class="fixed-button" data-aos="fade-up">
         <i class="bi bi-chevron-up"></i>
     </div>
 
     <!--Botão WhatsApp-->
-    <div id="whatsappButton" class="fixed-button">
+    <div id="whatsappButton" class="fixed-button" data-aos="fade-up">
         <i class="bi bi-whatsapp"></i>
     </div>
 
@@ -37,7 +40,7 @@
     <div class="container hidden">
 
         <!--Header-->
-        <header class="header">
+        <header class="header" data-aos="fade-down">
             <div class="logo">
                 <img src="assets/img/logo-white.png" alt="logo hugo bartol">
             </div>
@@ -65,7 +68,7 @@
         <!--Fim Header-->
 
         <!--Início-->
-        <main id="inicio" class="inicio">
+        <main id="inicio" class="inicio" data-aos="fade-in">
             <div class="video-bg-home">
                 <video id="bgVideo" autoplay muted loop>
                     <source src="assets/img/3d-animation.mp4" type="video/mp4">
@@ -74,15 +77,15 @@
             </div>
             <div class="container-inicio">
                 <div class="conteudo-inicio">
-                    <div class="titulo-inicio">
+                    <div class="titulo-inicio" data-aos="fade-up">
                         <h1>Design & Develop</h1>
                         <h1 class="destaque-inicio">Creative</h1>
                     </div>
-                    <div class="paragrafo-inicio">
+                    <div class="paragrafo-inicio" data-aos="fade-up" data-aos-delay="100">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt laboriosam eum nisi
                             delectus ab ad expedita! Earum.</p>
                     </div>
-                    <button class="cta">
+                    <button class="cta" data-aos="fade-up" data-aos-delay="200">
                         <span>Fale Comigo</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
                             <path d="M1,5 L11,5"></path>
@@ -90,7 +93,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="complemento-inicio">
+                <div class="complemento-inicio" data-aos="fade-up" data-aos-delay="300">
                     <img class="text" src="assets/img/left-complemento-inicio.png" alt="free your mind">
                     <img class="qr-code" src="assets/img/qr-code-link-bio-linktree.png" alt="link-bio-hugo-bartol">
                 </div>
@@ -99,10 +102,10 @@
         <!--Fim Início-->
 
         <!--Sobre-->
-        <section id="sobre" class="sobre">
+        <section id="sobre" class="sobre" data-aos="fade-in">
             <div class="container-sobre">
                 <!--Slide Sobre-->
-                <div class="headline-sobre">
+                <div class="headline-sobre" data-aos="fade-up">
                     <div class="headline-scroll" id="headline-scroll">
                         <span class="bold">SOBRE</span>
                         <span class="divisor"></span>
@@ -126,7 +129,7 @@
                         <span class="divisor"></span>
                     </div>
                 </div>
-                <div class="conteudo-sobre">
+                <div class="conteudo-sobre" data-aos="fade-up" data-aos-delay="100">
                     <div class="left-sobre">
                         <div class="textos-sobre">
                             <h1>Olá! Me chamo Hugo Bartol</h1>
@@ -155,9 +158,9 @@
         <!--Fim Sobre-->
 
         <!--Skills-->
-        <section id="skills" class="skills">
+        <section id="skills" class="skills" data-aos="fade-in">
             <div class="container-skills">
-                <div class="headline-skills">
+                <div class="headline-skills" data-aos="fade-up">
                     <div class="text-headline-skills">
                         <h2>Minhas Skills</h2>
                         <p>Além das hard skills abaixo, possuo comunicação clara, boas conexões interpessoais,
@@ -165,26 +168,26 @@
                             copo meio cheio!</p>
                     </div>
                 </div>
-                <div class="conteudo-skills">
-                    <div class="box-skills">
+                <div class="conteudo-skills" data-aos="fade-up" data-aos-delay="100">
+                    <div class="box-skills" data-aos="flip-left">
                         <i class="bi bi-palette"></i>
                         <h3>Domínio de Software de Design Gráfico</h3>
                         <p>Proficiência em Adobe Illustrator, Photoshop, InDesign, Sketch, Figma para criar elementos
                             visuais.</p>
                     </div>
-                    <div class="box-skills">
+                    <div class="box-skills" data-aos="flip-left" data-aos-delay="100">
                         <i class="bi bi-type"></i>
                         <h3>Conhecimento Tipográfico</h3>
                         <p>Escolha e combinação eficaz de fontes, considerando legibilidade e consistência com a
                             identidade da marca.</p>
                     </div>
-                    <div class="box-skills">
+                    <div class="box-skills" data-aos="flip-left" data-aos-delay="200">
                         <i class="bi bi-book"></i>
                         <h3>Padrões de Marca e Identidade Visual</h3>
                         <p>Desenvolvimento e manutenção de diretrizes de marca para garantir a integridade visual em
                             todos os materiais e canais.</p>
                     </div>
-                    <div class="box-skills">
+                    <div class="box-skills" data-aos="flip-left" data-aos-delay="300">
                         <i class="bi bi-graph-up"></i>
                         <h3>SEO e Marketing Digital</h3>
                         <p>Conhecimento básico em SEO e estratégias de marketing digital para garantir a eficácia dos
@@ -196,9 +199,9 @@
         <!--Fim Skills-->
 
         <!--Serviços-->
-        <section id="servicos" class="servicos">
+        <section id="servicos" class="servicos" data-aos="fade-in">
             <div class="container-servicos">
-                <div class="headline-servicos">
+                <div class="headline-servicos" data-aos="fade-up">
                     <div class="titulo-servicos">
                         <h1>Serviços</h1>
                     </div>
@@ -207,44 +210,44 @@
                             expedita debitis numquam dolorum?</p>
                     </div>
                 </div>
-                <div class="servicos-cards">
+                <div class="servicos-cards" data-aos="fade-up" data-aos-delay="100">
                     <!--Serviço 1-->
-                    <div class="card-servicos-left">
+                    <div class="card-servicos-left" data-aos="zoom-in">
                         <div class="card-titulo">
                             <h1>Gestão de Redes Sociais</h1>
                         </div>
                         <div class="card-icon"><i class="bi bi-share"></i></div>
                     </div>
                     <!--Serviço 2-->
-                    <div class="card-servicos">
+                    <div class="card-servicos" data-aos="zoom-in" data-aos-delay="100">
                         <div class="card-titulo">
                             <h1>Desenvolvimento de Estratégia</h1>
                         </div>
                         <div class="card-icon"><i class="bi bi-diagram-3"></i></div>
                     </div>
                     <!--Serviço 3-->
-                    <div class="card-servicos-left">
+                    <div class="card-servicos-left" data-aos="zoom-in" data-aos-delay="200">
                         <div class="card-titulo">
                             <h1>Design e Desenvolvimento de Sites</h1>
                         </div>
                         <div class="card-icon"><i class="bi bi-globe"></i></div>
                     </div>
                     <!--Serviço 4-->
-                    <div class="card-servicos">
+                    <div class="card-servicos" data-aos="zoom-in" data-aos-delay="300">
                         <div class="card-titulo">
                             <h1>Trafégo Pago</h1>
                         </div>
                         <div class="card-icon"><i class="bi bi-currency-dollar"></i></div>
                     </div>
                     <!--Serviço 5-->
-                    <div class="card-servicos-left">
+                    <div class="card-servicos-left" data-aos="zoom-in" data-aos-delay="400">
                         <div class="card-titulo">
                             <h1>UX/UI Design</h1>
                         </div>
                         <div class="card-icon"><i class="bi bi-layers"></i></div>
                     </div>
                     <!--Serviço 6-->
-                    <div class="card-servicos">
+                    <div class="card-servicos" data-aos="zoom-in" data-aos-delay="500">
                         <div class="card-titulo">
                             <h1>Estúdio de Fotos e Vídeos Profissionais</h1>
                         </div>
@@ -258,16 +261,16 @@
         <!--Complemento FREE YOUR MIND-->
         <section id="free-your-mind" class="free-your-mind">
             <div class="container-free-your-mind">
-                <div class="line-container">
+                <div class="line-container" data-aos="fade-up">
                     <span> FREE </span>
                     <span class="line"></span>
                 </div>
-                <div class="line-container center">
+                <div class="line-container center" data-aos="fade-up" data-aos-delay="100">
                     <span class="line"></span>
                     <span> YOUR </span>
                     <span class="line"></span>
                 </div>
-                <div class="line-container right">
+                <div class="line-container right" data-aos="fade-up" data-aos-delay="200">
                     <span class="line"></span>
                     <span> MIND </span>
                 </div>
@@ -276,17 +279,17 @@
         <!--Fim FREE YOUR MIND-->
 
         <!--Portfolio-->
-        <section id="portfolio" class="portfolio">
+        <section id="portfolio" class="portfolio" data-aos="fade-in">
             <div class="container-portfolio">
-                <div class="headline-portfolio">
+                <div class="headline-portfolio" data-aos="fade-up">
                     <h1 class="titulo">Portfolio</h1>
                     <span class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
                         consequuntur odit, dolorem architecto optio vitae perspiciatis!</span>
                 </div>
-                <div class="container-case">
+                <div class="container-case" data-aos="fade-up" data-aos-delay="100">
                     <!--Case 1-->
                     <div class="case1">
-                        <div class="imagens-case">
+                        <div class="imagens-case" data-aos="fade-left">
                             <div class="slide">
                                 <i class="bi bi-chevron-left prev"></i>
                                 <img src="assets/img/case 1/sellis (1).webp" alt="">
@@ -298,7 +301,7 @@
                                 <i class="bi bi-chevron-right next"></i>
                             </div>
                         </div>
-                        <div class="textos-case">
+                        <div class="textos-case" data-aos="fade-right">
                             <div class="conteudo-textos-case">
                                 <h1>Sellis</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
@@ -309,7 +312,7 @@
                     </div>
                     <!--Case 2-->
                     <div class="case2">
-                        <div class="textos-case">
+                        <div class="textos-case" data-aos="fade-right">
                             <div class="conteudo-textos-case">
                                 <h1>Ernesto</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
@@ -317,7 +320,7 @@
                                 <span>Tipo do serviço</span>
                             </div>
                         </div>
-                        <div class="imagens-case">
+                        <div class="imagens-case" data-aos="fade-left">
                             <div class="slide">
                                 <i class="bi bi-chevron-left prev"></i>
                                 <img src="assets/img/case 2/ernesto (1).webp" alt="">
@@ -332,7 +335,7 @@
                     </div>
                     <!--Case 3-->
                     <div class="case3">
-                        <div class="imagens-case">
+                        <div class="imagens-case" data-aos="fade-left">
                             <div class="slide">
                                 <i class="bi bi-chevron-left prev"></i>
                                 <img src="assets/img/case 3/tamyra (1).webp" alt="">
@@ -350,7 +353,7 @@
                                 <i class="bi bi-chevron-right next"></i>
                             </div>
                         </div>
-                        <div class="textos-case">
+                        <div class="textos-case" data-aos="fade-right">
                             <div class="conteudo-textos-case">
                                 <h1>Tamyra Gaglia</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
@@ -361,7 +364,7 @@
                     </div>
                     <!--Case 4-->
                     <div class="case4">
-                        <div class="textos-case">
+                        <div class="textos-case" data-aos="fade-right">
                             <div class="conteudo-textos-case">
                                 <h1>Calamari</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
@@ -369,7 +372,7 @@
                                 <span>Tipo do serviço</span>
                             </div>
                         </div>
-                        <div class="imagens-case">
+                        <div class="imagens-case" data-aos="fade-left">
                             <div class="slide">
                                 <i class="bi bi-chevron-left prev"></i>
                                 <img src="assets/img/case 4/calamari (1).webp" alt="">
@@ -388,9 +391,9 @@
         <!--Fim Portfolio-->
 
         <!--Marcas-->
-        <section id="marcas" class="marcas">
+        <section id="marcas" class="marcas" data-aos="fade-in">
             <div class="container-marcas">
-                <div class="headline-marcas">
+                <div class="headline-marcas" data-aos="fade-up">
                     <div class="text-headline-marcas">
                         <h2>Marcas que se destacam</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore similique dolorem
@@ -399,29 +402,41 @@
                 </div>
                 <div class="carousel" id="carousel" role="region" aria-label="Logo Carousel">
                     <div class="carousel-container" id="carouselContainer" role="list">
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/1.png" alt="Logo 1">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up">
+                            <img src="assets/img/marcas/1.png" alt="Logo 1">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/2.png" alt="Logo 2">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="100">
+                            <img src="assets/img/marcas/2.png" alt="Logo 2">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/3.png" alt="Logo 3">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="200">
+                            <img src="assets/img/marcas/3.png" alt="Logo 3">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/4.png" alt="Logo 4">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="300">
+                            <img src="assets/img/marcas/4.png" alt="Logo 4">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/5.png" alt="Logo 5">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="400">
+                            <img src="assets/img/marcas/5.png" alt="Logo 5">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/6.png" alt="Logo 6">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="500">
+                            <img src="assets/img/marcas/6.png" alt="Logo 6">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/7.png" alt="Logo 7">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="600">
+                            <img src="assets/img/marcas/7.png" alt="Logo 7">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/8.png" alt="Logo 8">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="700">
+                            <img src="assets/img/marcas/8.png" alt="Logo 8">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/9.png" alt="Logo 9">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="800">
+                            <img src="assets/img/marcas/9.png" alt="Logo 9">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/10.png" alt="Logo 10">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="900">
+                            <img src="assets/img/marcas/10.png" alt="Logo 10">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/11.png" alt="Logo 11">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="1000">
+                            <img src="assets/img/marcas/11.png" alt="Logo 11">
                         </div>
-                        <div class="carousel-item" role="listitem"><img src="assets/img/marcas/12.png" alt="Logo 12">
+                        <div class="carousel-item" role="listitem" data-aos="fade-up" data-aos-delay="1100">
+                            <img src="assets/img/marcas/12.png" alt="Logo 12">
                         </div>
                     </div>
                 </div>
@@ -430,9 +445,9 @@
         <!--Fim Marcas-->
 
         <!--Contato-->
-        <section id="contato" class="contato">
+        <section id="contato" class="contato" data-aos="fade-in">
             <div class="container-contato">
-                <div class="headline-contato">
+                <div class="headline-contato" data-aos="fade-up">
                     <div class="titulo-contato">
                         <h1>Contato</h1>
                     </div>
@@ -444,7 +459,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="conteudo-contato">
+                <div class="conteudo-contato" data-aos="fade-up" data-aos-delay="100">
                     <div class="formulario-contato">
                         <h2>Entre em contato</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora harum aliquid ullam nobis,
@@ -467,12 +482,12 @@
         <!--Fim Contato-->
 
         <!--Footer-->
-        <footer class="footer" id="footer">
+        <footer class="footer" id="footer" data-aos="fade-in">
             <div class="container-footer">
-                <div class="footer-column logo-column">
+                <div class="footer-column logo-column" data-aos="fade-up">
                     <img src="assets/img/logo-white.png" alt="logo hugo bartol">
                 </div>
-                <div class="footer-column menu-column">
+                <div class="footer-column menu-column" data-aos="fade-up" data-aos-delay="100">
                     <nav class="footer-nav">
                         <a href="#inicio">Início</a>
                         <a href="#sobre">Sobre</a>
@@ -481,7 +496,7 @@
                         <a href="#contato">Contato</a>
                     </nav>
                 </div>
-                <div class="footer-column social-column">
+                <div class="footer-column social-column" data-aos="fade-up" data-aos-delay="200">
                     <ul class="social-links">
                         <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
                         <li><a href="#"><i class="bi bi-behance"></i> Behance</a></li>
@@ -489,7 +504,7 @@
                         <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
                     </ul>
                 </div>
-                <div class="footer-column credits-column">
+                <div class="footer-column credits-column" data-aos="fade-up" data-aos-delay="300">
                     <p>&copy; 2024 Hugo Bartol. Todos os direitos reservados.</p>
                     <p>Desenvolvido por RM│Dev.</p>
                 </div>
@@ -500,6 +515,14 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+     <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Inicialização do AOS -->
+    <script>
+        AOS.init();
+    </script>
 
     <!--JavaScript-->
     <script src="assets/js/header.js"></script>

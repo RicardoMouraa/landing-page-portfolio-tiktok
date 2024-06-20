@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const images = slide.querySelectorAll('img');
         const nextButton = slide.querySelector('.next');
         const prevButton = slide.querySelector('.prev');
-        const intervalTime = 3000; // Tempo em milissegundos
+        const intervalTime = 3000;
 
         function showSlide(index) {
             images.forEach((img, i) => {

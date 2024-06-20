@@ -1,6 +1,10 @@
 /* Responsividade para iPad (tablet) */
 @media (max-width: 1024px) {
 
+    .container {
+        padding: 0;
+    }
+
     /************************** SOBRE ***/
     .sobre {
         height: auto;

@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+    if (window.location.hash !== '#inicio') {
+        window.location.hash = '#inicio';
+    }
+
     const backToTopButton = document.getElementById('backToTop');
     const whatsappButton = document.getElementById('whatsappButton');
     const loadingVideo = document.getElementById('loadingVideo');
@@ -32,5 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     backToTopButton.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    whatsappButton.addEventListener('click', function () {
+        window.location.href = 'https://wa.me/5599999999999';
     });
 });
