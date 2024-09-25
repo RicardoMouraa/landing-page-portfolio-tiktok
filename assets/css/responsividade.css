@@ -197,8 +197,9 @@
         width: 100%;
     }
 
-}
-
-/* Responsividade para iPhone (celular) */
-@media (max-width: 768px) {
+    .credits-column {
+        width: auto;
+        text-align: right;
+        margin-top: 0;
+    }
 }

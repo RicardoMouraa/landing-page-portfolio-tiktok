@@ -62,53 +62,6 @@ a {
     text-decoration: none;
 }
 
-body.loading {
-    overflow: hidden;
-}
-
-/* Video de Loading */
-.video-loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-black);
-    z-index: -1;
-}
-
-/* Animação de fade-out com zoom */
-@keyframes fadeOutZoom {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(2);
-    }
-}
-
-.fade-out {
-    animation: fadeOutZoom 1s forwards;
-}
-
-.video-loading video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-@media (max-width: 1200px) {
-    .video-loading video {
-        object-fit: contain;
-    }
-}
-
 /*Botões fixos*/
 .fixed-button {
     position: fixed;
@@ -164,34 +117,6 @@ body.loading {
     }
 }
 
-/*Video da home*/
-.video-bg-home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: #010001;
-    opacity: 0.8;
-}
-
-.video-bg-home video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* Estilos adicionais */
-.hidden {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.visible {
-    opacity: 1;
-}
-
 .container {
     width: 100%;
     max-width: 1400px;
@@ -200,20 +125,6 @@ body.loading {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.fade-in {
-    opacity: 1;
-}
-
-.fade-out {
-    opacity: 0;
-}
-
-body.no-scroll {
-    overflow: hidden;
 }
 
 /*************** HEADER *****/
@@ -221,16 +132,16 @@ body.no-scroll {
     user-select: none;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     padding: 2rem 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 99;
     transition: top 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, .9); /* Fundo semitransparente */
-    backdrop-filter: blur(10px); /* Efeito de vidro */
-    -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+    background-color: rgba(0, 0, 0, .9); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
 }
 
 /* Logo */
@@ -314,7 +225,8 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 4rem;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -456,7 +368,7 @@ body.no-scroll {
 .complemento-inicio {
     position: absolute;
     bottom: 2rem;
-    width: 100%;
+    width: 100vw;
     padding: 0rem 1.2rem;
     display: flex;
     align-items: center;
@@ -848,7 +760,7 @@ body.no-scroll {
     margin-bottom: -7px;
 }
 
-/*************** FREE YOUR MIND *****/
+/*************** ALGUMA FRASE AQUI  *****/
 .free-your-mind {
     background-color: var(--color-white);
     width: 100vw;
@@ -1069,71 +981,6 @@ body.no-scroll {
     letter-spacing: 1.2px;
 }
 
-/*************** MARCAS *****/
-.marcas {
-    background-color: var(--color-white);
-    width: 100vw;
-    padding: 3rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-marcas {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.headline-marcas {
-    width: 100%;
-    max-width: 1400px;
-    margin-bottom: 2rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-black);
-}
-
-.text-headline-marcas h2 {
-    font-family: var(--font-grande);
-    font-size: 3rem;
-}
-
-.text-headline-marcas p {
-    font-size: 1.5rem;
-    color: var(--color-gray1);
-    font-weight: 500;
-    line-height: 1.4;
-    max-width: 900px;
-}
-
-.carousel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-container {
-    display: flex;
-    white-space: nowrap;
-    transition: transform 0.1s linear;
-}
-
-.carousel-item {
-    display: inline-block;
-    min-width: 200px;
-    text-align: center;
-}
-
-.carousel-item img {
-    max-width: 100%;
-    height: auto;
-}
-
 /*************** CONTATO *****/
 .contato {
     width: 100vw;
@@ -1284,8 +1131,10 @@ body.no-scroll {
     padding: 3rem 1rem;
     color: var(--color-white);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
 
 .container-footer {
@@ -1310,7 +1159,7 @@ body.no-scroll {
 }
 
 .logo-column img {
-    width: 150px;
+    width: 100px;
 }
 
 .menu-column {
