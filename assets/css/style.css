@@ -380,7 +380,8 @@ a {
 }
 
 .complemento-inicio .qr-code {
-    width: 80px;
+    width: 120px; /* Aumentado o Width para compensar no padding e ter uma área de acesso maior para acionar o :hover*/
+    padding: 20px; /* Uma área de acesso maior para acionar o :hover */
     opacity: .2;
     transition: all .5s ease-in-out;
 }
