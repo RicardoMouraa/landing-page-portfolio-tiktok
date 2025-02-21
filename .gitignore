@@ -1,0 +1,13 @@
+# Ignorar arquivos de configuração local
+.env
+
+# Ignorar pastas de dependências
+node_modules/
+
+# Ignorar arquivos gerados pelo sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de IDE
+.vscode/
+.idea/

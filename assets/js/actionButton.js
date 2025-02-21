@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     // Ajusta para garantir que o site comece no topo ao recarregar
     if (window.location.hash !== '#inicio') {
@@ -37,6 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Ação ao clicar no botão do WhatsApp
     whatsappButton.addEventListener('click', function () {
-        window.location.href = 'https://wa.me/5599999999999';
+        window.location.href = 'https://wa.me/5512997388925';
     });
 });

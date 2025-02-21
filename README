@@ -1,0 +1,14 @@
+# Meu Projeto HTML
+
+Este é um projeto de exemplo para criar uma página web simples.
+
+## Como usar
+
+1. Clone este repositório.
+2. Abra o arquivo `index.html` no seu navegador.
+
+## Estrutura do Projeto
+
+- `index.html`: Página principal.
+- `css/`: Pasta com arquivos CSS.
+- `js/`: Pasta com arquivos JavaScript.

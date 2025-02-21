@@ -133,7 +133,7 @@ a {
     position: fixed;
     top: 0;
     width: 100vw;
-    padding: 2rem 1.2rem;
+    padding: 1rem 1.2rem; /* Reduzindo a altura */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -143,6 +143,7 @@ a {
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
 }
+
 
 /* Logo */
 .logo {
@@ -1123,6 +1124,37 @@ a {
     width: 80%;
     border-radius: 36px;
 }
+
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.instagram { background-color: #E1306C; }
+.github { background-color: #333; }
+.facebook { background-color: #1877F2; }
+.linkedin { background-color: #0077B5; }
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+
 
 /*************** FOOTER *****/
 .footer {
